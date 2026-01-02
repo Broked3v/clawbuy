@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>$CLAW — Market just grew claws</title>
+  <meta name="description" content="$CLAW — Market just grew claws. A Solana meme coin." />
+  <meta name="theme-color" content="#050607" />
+  <meta property="og:title" content="$CLAW — Market just grew claws" />
+  <meta property="og:description" content="Market just grew claws." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="claw-logo.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <style>
+    :root{--bg:#050607;--text:rgba(255,255,255,.92);--muted:rgba(255,255,255,.62);--line:rgba(255,255,255,.12);--glow:rgba(225,29,72,.35);--accent:#e11d48;--accent2:#ff6b6b;--radius:18px;--shadow:0 18px 70px rgba(0,0,0,.55);}
+    *{box-sizing:border-box} html,body{height:100%}
+    body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";color:var(--text);
+      background:radial-gradient(900px 520px at 18% 12%, rgba(225,29,72,.14), transparent 60%),
+               radial-gradient(800px 520px at 85% 18%, rgba(255,107,107,.10), transparent 58%),
+               radial-gradient(1000px 700px at 50% 100%, rgba(225,29,72,.08), transparent 60%),
+               var(--bg);overflow-x:hidden;}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1080px;margin:0 auto;padding:26px 18px 62px}
+    .top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+    .brand{display:inline-flex;align-items:center;gap:10px;padding:10px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.03);backdrop-filter:blur(8px);box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    .dot{width:10px;height:10px;border-radius:999px;background:var(--accent);box-shadow:0 0 20px var(--glow)}
+    .nav{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+    .chip{padding:10px 12px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.03);color:var(--muted);transition:transform .15s ease,border-color .15s ease,background .15s ease;backdrop-filter:blur(8px);user-select:none}
+    .chip:hover{transform:translateY(-1px);border-color:rgba(225,29,72,.45);background:rgba(225,29,72,.07);color:var(--text)}
+    .hero{border:1px solid var(--line);background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.03));border-radius:28px;box-shadow:var(--shadow);padding:22px;position:relative;overflow:hidden}
+    .hero:before{content:"";position:absolute;inset:-2px;background:radial-gradient(560px 260px at 20% 10%, rgba(225,29,72,.20), transparent 62%),radial-gradient(520px 260px at 82% 10%, rgba(255,107,107,.16), transparent 62%);opacity:.9;pointer-events:none}
+    .heroInner{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:18px;align-items:stretch}
+    @media (max-width:920px){.heroInner{grid-template-columns:1fr}}
+    .left,.right{border:1px solid rgba(255,255,255,.10);background:rgba(0,0,0,.18);backdrop-filter:blur(10px);border-radius:var(--radius)}
+    .left{padding:18px}
+    h1{margin:6px 0 10px;font-size:clamp(44px,6vw,74px);line-height:1.02;letter-spacing:-1px}
+    .tag{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03);padding:8px 10px;border-radius:999px;color:var(--muted);font-weight:650;letter-spacing:.2px}
+    .sub{margin:0 0 18px;color:var(--muted);font-size:1.08rem;line-height:1.55;max-width:60ch}
+    .ctaRow{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:12px 14px;border-radius:14px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);color:var(--text);font-weight:800;cursor:pointer;transition:transform .15s ease,border-color .15s ease,background .15s ease;user-select:none}
+    .btn:hover{transform:translateY(-1px);border-color:rgba(225,29,72,.50);background:rgba(225,29,72,.08)}
+    .btn.primary{background:linear-gradient(180deg, rgba(225,29,72,.28), rgba(225,29,72,.12));border-color:rgba(225,29,72,.55);box-shadow:0 0 0 1px rgba(225,29,72,.15), 0 18px 40px rgba(0,0,0,.35)}
+    .btn.primary:hover{background:linear-gradient(180deg, rgba(225,29,72,.34), rgba(225,29,72,.14))}
+    .btn.ghost{color:var(--muted)}
+    .btn.ghost:hover{color:var(--text);border-color:rgba(255,107,107,.55);background:rgba(255,107,107,.08)}
+    .note{margin-top:12px;color:rgba(255,255,255,.52);font-size:.92rem;line-height:1.55}
+    .right{padding:16px;display:flex;flex-direction:column;gap:12px}
+    .logoCard{border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03);border-radius:18px;padding:14px;display:flex;align-items:center;justify-content:center;min-height:220px;position:relative;overflow:hidden}
+    .logoCard:after{content:"";position:absolute;inset:-40%;background:radial-gradient(circle at 30% 30%, rgba(255,255,255,.10), transparent 40%),radial-gradient(circle at 70% 70%, rgba(225,29,72,.14), transparent 42%);transform:rotate(18deg);pointer-events:none}
+    .logoCard img{position:relative;max-width:360px;width:100%;height:auto;display:block;border-radius:14px;filter:drop-shadow(0 18px 40px rgba(0,0,0,.45))}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .tile{border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03);border-radius:16px;padding:12px}
+    .k{color:rgba(255,255,255,.58);font-size:.86rem}
+    .v{font-weight:900;margin-top:2px;letter-spacing:.2px}
+    .mint{border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03);border-radius:16px;padding:12px}
+    .mint label{display:block;font-size:.86rem;color:rgba(255,255,255,.58);margin-bottom:8px;font-weight:700}
+    .mintRow{display:flex;gap:10px;flex-wrap:wrap}
+    input{flex:1 1 240px;padding:11px 12px;border-radius:14px;border:1px solid rgba(255,255,255,.14);background:rgba(0,0,0,.22);color:var(--text);outline:none}
+    input::placeholder{color:rgba(255,255,255,.35)}
+    .mini{padding:11px 12px;border-radius:14px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);font-weight:900;cursor:pointer;color:var(--text);transition:transform .15s ease,border-color .15s ease,background .15s ease}
+    .mini:hover{transform:translateY(-1px);border-color:rgba(225,29,72,.50);background:rgba(225,29,72,.08)}
+    .below{margin-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    @media (max-width:920px){.below{grid-template-columns:1fr}}
+    .card{border:1px solid rgba(255,255,255,.12);border-radius:22px;background:rgba(255,255,255,.03);box-shadow:0 12px 40px rgba(0,0,0,.25);padding:18px;text-align:left}
+    .card h2{margin:0 0 10px;font-size:1.1rem;letter-spacing:.2px}
+    .fine{color:rgba(255,255,255,.58);line-height:1.55}
+    .list{margin:0;padding-left:18px;color:rgba(255,255,255,.62);line-height:1.55}
+    .footer{margin-top:18px;border:1px solid rgba(255,255,255,.10);border-radius:22px;background:rgba(255,255,255,.02);padding:14px 16px;color:rgba(255,255,255,.52);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+    .toast{position:fixed;left:50%;transform:translateX(-50%);bottom:18px;width:min(760px, calc(100vw - 36px));border:1px solid rgba(255,255,255,.14);background:rgba(0,0,0,.72);backdrop-filter:blur(10px);border-radius:16px;box-shadow:var(--shadow);padding:12px 12px;display:none;z-index:30;text-align:left;color:rgba(255,255,255,.78)}
+    .toast strong{color:var(--text)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <div class="brand"><span class="dot"></span><strong>$CLAW</strong><span style="color: rgba(255,255,255,.55); font-weight:700;">• Solana meme</span></div>
+      <div class="nav"><a class="chip" href="#token">Token</a><a class="chip" href="#links">Links</a><a class="chip" href="#lore">Lore</a></div>
+    </div>
+
+    <section class="hero" id="top">
+      <div class="heroInner">
+        <div class="left">
+          <span class="tag">Market just grew claws.</span>
+          <h1>$CLAW</h1>
+          <p class="sub">No roadmap. No speeches. Just the snap-back.</p>
+
+          <div class="ctaRow">
+            <button class="btn primary" onclick="openSwap()">Buy</button>
+            <button class="btn" onclick="copyMint()">Copy mint</button>
+            <button class="btn ghost" id="connectBtn" onclick="connectWallet()">Connect wallet</button>
+          </div>
+
+          <p class="note">
+            Buy opens a SOL → $CLAW swap on Jupiter (DEX aggregator).
+            Wallet connect is read-only (address access). This page never requests transaction signatures.
+          </p>
+        </div>
+
+        <aside class="right" id="token">
+          <div class="logoCard"><img src="claw-logo.svg" alt="$CLAW logo" /></div>
+
+          <div class="grid">
+            <div class="tile"><div class="k">Chain</div><div class="v">Solana</div></div>
+            <div class="tile"><div class="k">Tax</div><div class="v">0%</div></div>
+            <div class="tile"><div class="k">Supply</div><div class="v">1,000,000,000</div></div>
+            <div class="tile"><div class="k">Signal</div><div class="v" id="signal">SNAP</div></div>
+          </div>
+
+          <div class="mint">
+            <label>Token mint (paste when live)</label>
+            <div class="mintRow">
+              <input id="mintInput" placeholder="TOKEN_MINT_ADDRESS_HERE" autocomplete="off" />
+              <button class="mini" onclick="openSwap()">Swap</button>
+            </div>
+          </div>
+
+          <div class="tile" style="display:flex; justify-content:space-between; align-items:center;">
+            <div class="k">Wallet</div>
+            <div class="v" id="walletLabel" style="font-size: 1rem;">not connected</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <div class="below">
+      <section class="card" id="lore">
+        <h2>Lore</h2>
+        <p class="fine">Markets don’t always bounce. Sometimes they <b>grow claws</b>. $CLAW is the meme for that moment.</p>
+        <ul class="list">
+          <li>Red day → green day → snap-back.</li>
+          <li>Fear → cope → claws.</li>
+          <li>When the candle rips: we call it a <b>SNAP</b>.</li>
+        </ul>
+      </section>
+
+      <section class="card" id="links">
+        <h2>Links</h2>
+        <p class="fine">Set your links in the config block inside the HTML.</p>
+        <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top: 10px;">
+          <a class="btn" id="xLink" href="#" rel="noopener noreferrer">X (Twitter)</a>
+          <a class="btn" id="tgLink" href="#" rel="noopener noreferrer">Telegram</a>
+          <a class="btn" id="dexLink" href="#" rel="noopener noreferrer">Chart</a>
+          <button class="btn primary" onclick="openSwap()">Buy</button>
+        </div>
+        <p class="note" style="margin-top:12px;">Tip: when you have your mint, paste it above (or set DEFAULT_TOKEN_MINT) and you’re live.</p>
+      </section>
+    </div>
+
+    <div class="footer">
+      <div>© <span id="year"></span> $CLAW • financial comedy</div>
+      <div>Don’t spend rent money. 🦞</div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+<script>
+  // CONFIG (edit these)
+  const DEFAULT_TOKEN_MINT = "";
+  const X_URL  = "#";
+  const TG_URL = "#";
+  const DEX_URL = "#";
+
+  const $ = (id) => document.getElementById(id);
+
+  function toast(msg){
+    const t = $("toast");
+    t.innerHTML = msg;
+    t.style.display = "block";
+    clearTimeout(window.__toastTimer);
+    window.__toastTimer = setTimeout(() => t.style.display = "none", 3200);
+  }
+
+  function shortKey(pk){
+    const s = String(pk);
+    return (s.length <= 10) ? s : (s.slice(0,4) + "…" + s.slice(-4));
+  }
+
+  $("xLink").href = X_URL;
+  $("tgLink").href = TG_URL;
+  $("dexLink").href = DEX_URL;
+
+  function currentMint(){
+    const v = ($("mintInput").value || "").trim();
+    return v || DEFAULT_TOKEN_MINT;
+  }
+  function openSwap(){
+    const mint = currentMint();
+    if(!mint){
+      toast("<strong>$CLAW:</strong> mint isn’t set yet. Paste it in the Token box when live.");
+      return;
+    }
+    window.open("https://jup.ag/swap/SOL-" + encodeURIComponent(mint), "_blank", "noopener,noreferrer");
+  }
+  async function copyMint(){
+    const mint = currentMint();
+    if(!mint){
+      toast("<strong>$CLAW:</strong> no mint set yet.");
+      return;
+    }
+    try{
+      await navigator.clipboard.writeText(mint);
+      toast("<strong>Copied:</strong> mint address");
+    }catch{
+      toast("<strong>$CLAW:</strong> could not copy — select and copy manually.");
+    }
+  }
+
+  // Wallet connect (read-only)
+  let connectedPublicKey = null;
+  function getProvider(){ return ("solana" in window) ? window.solana : null; }
+
+  async function connectWallet(){
+    const provider = getProvider();
+    if(!provider){
+      toast("<strong>No wallet:</strong> install Phantom/Solflare then refresh.");
+      return;
+    }
+    try{
+      const resp = await provider.connect();
+      connectedPublicKey = resp.publicKey?.toString ? resp.publicKey.toString() : (resp.publicKey || provider.publicKey?.toString());
+      if(!connectedPublicKey) connectedPublicKey = provider.publicKey?.toString?.() || null;
+      $("walletLabel").textContent = connectedPublicKey ? shortKey(connectedPublicKey) : "connected";
+      $("connectBtn").textContent = "Wallet connected";
+      $("connectBtn").disabled = true;
+      toast("<strong>Connected:</strong> " + shortKey(connectedPublicKey));
+    }catch(e){
+      console.log(e);
+      toast("<strong>Cancelled:</strong> wallet connect");
+    }
+  }
+
+  const signals = ["SNAP", "CLAWED", "UP ONLY", "REVERSAL", "ACCUMULATING"];
+  setInterval(() => { $("signal").textContent = signals[Math.floor(Math.random()*signals.length)]; }, 9000);
+
+  $("year").textContent = String(new Date().getFullYear());
+</script>
+</body>
+</html>
