@@ -9,18 +9,19 @@
   <meta property="og:title" content="$CLAW — Market just grew claws" />
   <meta property="og:description" content="Market just grew claws." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="claw-logo.svg" />
+  <meta property="og:image" content="claw_x_banner_1500x500.png" />
   <meta name="twitter:card" content="summary_large_image" />
+
   <style>
-    :root{--bg:#050607;--text:rgba(255,255,255,.92);--muted:rgba(255,255,255,.62);--line:rgba(255,255,255,.12);--glow:rgba(225,29,72,.35);--accent:#e11d48;--accent2:#ff6b6b;--radius:18px;--shadow:0 18px 70px rgba(0,0,0,.55);}
+    :root{--bg:#050607;--text:rgba(255,255,255,.92);--muted:rgba(255,255,255,.62);--line:rgba(255,255,255,.12);--glow:rgba(225,29,72,.35);--accent:#e11d48;--radius:18px;--shadow:0 18px 70px rgba(0,0,0,.55);}
     *{box-sizing:border-box} html,body{height:100%}
     body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";color:var(--text);
       background:radial-gradient(900px 520px at 18% 12%, rgba(225,29,72,.14), transparent 60%),
                radial-gradient(800px 520px at 85% 18%, rgba(255,107,107,.10), transparent 58%),
                radial-gradient(1000px 700px at 50% 100%, rgba(225,29,72,.08), transparent 60%),
-               var(--bg);overflow-x:hidden;}
+               var(--bg);overflow-x:hidden;padding-bottom:48px;}
     a{color:inherit;text-decoration:none}
-    .wrap{max-width:1080px;margin:0 auto;padding:26px 18px 62px}
+    .wrap{max-width:1080px;margin:0 auto;padding:26px 18px 42px}
     .top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:18px}
     .brand{display:inline-flex;align-items:center;gap:10px;padding:10px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.03);backdrop-filter:blur(8px);box-shadow:0 10px 30px rgba(0,0,0,.25)}
     .dot{width:10px;height:10px;border-radius:999px;background:var(--accent);box-shadow:0 0 20px var(--glow)}
@@ -33,9 +34,10 @@
     @media (max-width:920px){.heroInner{grid-template-columns:1fr}}
     .left,.right{border:1px solid rgba(255,255,255,.10);background:rgba(0,0,0,.18);backdrop-filter:blur(10px);border-radius:var(--radius)}
     .left{padding:18px}
-    h1{margin:6px 0 10px;font-size:clamp(44px,6vw,74px);line-height:1.02;letter-spacing:-1px}
+    h1{margin:8px 0 10px;font-size:clamp(44px,6vw,74px);line-height:1.02;letter-spacing:-1px}
     .tag{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03);padding:8px 10px;border-radius:999px;color:var(--muted);font-weight:650;letter-spacing:.2px}
-    .sub{margin:0 0 18px;color:var(--muted);font-size:1.08rem;line-height:1.55;max-width:60ch}
+    .sub{margin:0 0 10px;color:var(--muted);font-size:1.08rem;line-height:1.55;max-width:60ch}
+    .micro{margin:0 0 18px;color:rgba(255,255,255,.52);font-size:.95rem;line-height:1.55}
     .ctaRow{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
     .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:12px 14px;border-radius:14px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);color:var(--text);font-weight:800;cursor:pointer;transition:transform .15s ease,border-color .15s ease,background .15s ease;user-select:none}
     .btn:hover{transform:translateY(-1px);border-color:rgba(225,29,72,.50);background:rgba(225,29,72,.08)}
@@ -46,8 +48,8 @@
     .note{margin-top:12px;color:rgba(255,255,255,.52);font-size:.92rem;line-height:1.55}
     .right{padding:16px;display:flex;flex-direction:column;gap:12px}
     .logoCard{border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03);border-radius:18px;padding:14px;display:flex;align-items:center;justify-content:center;min-height:220px;position:relative;overflow:hidden}
-    .logoCard:after{content:"";position:absolute;inset:-40%;background:radial-gradient(circle at 30% 30%, rgba(255,255,255,.10), transparent 40%),radial-gradient(circle at 70% 70%, rgba(225,29,72,.14), transparent 42%);transform:rotate(18deg);pointer-events:none}
-    .logoCard img{position:relative;max-width:360px;width:100%;height:auto;display:block;border-radius:14px;filter:drop-shadow(0 18px 40px rgba(0,0,0,.45))}
+    .logoCard:after{content:"";position:absolute;inset:-40%;background:radial-gradient(circle at 30% 30%, rgba(255,255,255,.08), transparent 40%),radial-gradient(circle at 70% 70%, rgba(225,29,72,.12), transparent 42%);transform:rotate(18deg);pointer-events:none}
+    .logoCard img{position:relative;max-width:340px;width:100%;height:auto;display:block;border-radius:14px;filter:drop-shadow(0 18px 40px rgba(0,0,0,.45))}
     .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
     .tile{border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03);border-radius:16px;padding:12px}
     .k{color:rgba(255,255,255,.58);font-size:.86rem}
@@ -66,7 +68,16 @@
     .fine{color:rgba(255,255,255,.58);line-height:1.55}
     .list{margin:0;padding-left:18px;color:rgba(255,255,255,.62);line-height:1.55}
     .footer{margin-top:18px;border:1px solid rgba(255,255,255,.10);border-radius:22px;background:rgba(255,255,255,.02);padding:14px 16px;color:rgba(255,255,255,.52);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
-    .toast{position:fixed;left:50%;transform:translateX(-50%);bottom:18px;width:min(760px, calc(100vw - 36px));border:1px solid rgba(255,255,255,.14);background:rgba(0,0,0,.72);backdrop-filter:blur(10px);border-radius:16px;box-shadow:var(--shadow);padding:12px 12px;display:none;z-index:30;text-align:left;color:rgba(255,255,255,.78)}
+
+    /* Audit / alert ticker (clean) */
+    .tickerWrap{position:fixed;bottom:0;left:0;width:100%;background:linear-gradient(180deg, rgba(0,0,0,.88), rgba(0,0,0,.78));
+      border-top:1px solid rgba(255,255,255,.12);backdrop-filter:blur(10px);z-index:25}
+    .ticker{display:flex;gap:22px;padding:10px 16px;white-space:nowrap;overflow:hidden;font-weight:850;letter-spacing:.25px;color:rgba(255,255,255,.82);will-change:transform}
+    .ticker span{display:inline-flex;align-items:center;gap:8px;padding-right:22px}
+    .pulse{width:8px;height:8px;border-radius:999px;background:var(--accent);box-shadow:0 0 14px var(--glow);animation:pulse 1.4s infinite ease-in-out}
+    @keyframes pulse{0%{transform:scale(1);opacity:.7}50%{transform:scale(1.6);opacity:1}100%{transform:scale(1);opacity:.7}}
+    .toast{position:fixed;left:50%;transform:translateX(-50%);bottom:60px;width:min(760px, calc(100vw - 36px));border:1px solid rgba(255,255,255,.14);background:rgba(0,0,0,.72);
+      backdrop-filter:blur(10px);border-radius:16px;box-shadow:var(--shadow);padding:12px 12px;display:none;z-index:30;text-align:left;color:rgba(255,255,255,.78)}
     .toast strong{color:var(--text)}
   </style>
 </head>
@@ -83,6 +94,7 @@
           <span class="tag">Market just grew claws.</span>
           <h1>$CLAW</h1>
           <p class="sub">No roadmap. No speeches. Just the snap-back.</p>
+          <p class="micro"><em>Fast moves attract attention.</em></p>
 
           <div class="ctaRow">
             <button class="btn primary" onclick="openSwap()">Buy</button>
@@ -91,7 +103,7 @@
           </div>
 
           <p class="note">
-            Buy opens a SOL → $CLAW swap on Jupiter (DEX aggregator).
+            Buy opens a SOL → $CLAW swap on Jupiter.
             Wallet connect is read-only (address access). This page never requests transaction signatures.
           </p>
         </div>
@@ -137,18 +149,29 @@
         <h2>Links</h2>
         <p class="fine">Set your links in the config block inside the HTML.</p>
         <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top: 10px;">
-          <a class="btn" id="xLink" href="#" rel="noopener noreferrer">X (Twitter)</a>
+          <a class="btn" id="xLink" href="#" rel="noopener noreferrer">X</a>
           <a class="btn" id="tgLink" href="#" rel="noopener noreferrer">Telegram</a>
           <a class="btn" id="dexLink" href="#" rel="noopener noreferrer">Chart</a>
           <button class="btn primary" onclick="openSwap()">Buy</button>
         </div>
-        <p class="note" style="margin-top:12px;">Tip: when you have your mint, paste it above (or set DEFAULT_TOKEN_MINT) and you’re live.</p>
+        <p class="note" style="margin-top:12px;">Tip: paste your mint above (or set DEFAULT_TOKEN_MINT) and you’re live.</p>
       </section>
     </div>
 
     <div class="footer">
       <div>© <span id="year"></span> $CLAW • financial comedy</div>
       <div>Don’t spend rent money. 🦞</div>
+    </div>
+  </div>
+
+  <div class="tickerWrap">
+    <div class="ticker" id="auditTicker">
+      <span><i class="pulse"></i> SYSTEM: Unusual CLAW velocity detected</span>
+      <span>NOTICE: Monitoring high-velocity assets</span>
+      <span>FLAG: SNAP candle logged</span>
+      <span>STATUS: Under review</span>
+      <span>INFO: Fast moves attract attention</span>
+      <span>NOTE: Claws leave marks</span>
     </div>
   </div>
 
@@ -207,31 +230,41 @@
   }
 
   // Wallet connect (read-only)
-  let connectedPublicKey = null;
-  function getProvider(){ return ("solana" in window) ? window.solana : null; }
-
   async function connectWallet(){
-    const provider = getProvider();
+    const provider = ("solana" in window) ? window.solana : null;
     if(!provider){
       toast("<strong>No wallet:</strong> install Phantom/Solflare then refresh.");
       return;
     }
     try{
       const resp = await provider.connect();
-      connectedPublicKey = resp.publicKey?.toString ? resp.publicKey.toString() : (resp.publicKey || provider.publicKey?.toString());
-      if(!connectedPublicKey) connectedPublicKey = provider.publicKey?.toString?.() || null;
-      $("walletLabel").textContent = connectedPublicKey ? shortKey(connectedPublicKey) : "connected";
+      const pk = resp.publicKey?.toString ? resp.publicKey.toString() : (provider.publicKey?.toString?.() || "connected");
+      $("walletLabel").textContent = shortKey(pk);
       $("connectBtn").textContent = "Wallet connected";
       $("connectBtn").disabled = true;
-      toast("<strong>Connected:</strong> " + shortKey(connectedPublicKey));
+      toast("<strong>Connected:</strong> " + shortKey(pk));
     }catch(e){
-      console.log(e);
       toast("<strong>Cancelled:</strong> wallet connect");
     }
   }
 
+  // Signal shuffler
   const signals = ["SNAP", "CLAWED", "UP ONLY", "REVERSAL", "ACCUMULATING"];
   setInterval(() => { $("signal").textContent = signals[Math.floor(Math.random()*signals.length)]; }, 9000);
+
+  // Ticker auto-scroll (seamless)
+  (function(){
+    const t = document.getElementById("auditTicker");
+    if(!t) return;
+    // duplicate content once for loop
+    t.innerHTML = t.innerHTML + t.innerHTML;
+    let x = 0;
+    setInterval(() => {
+      x -= 1;
+      t.style.transform = "translateX(" + x + "px)";
+      if (Math.abs(x) > t.scrollWidth / 2) x = 0;
+    }, 18);
+  })();
 
   $("year").textContent = String(new Date().getFullYear());
 </script>
